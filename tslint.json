@@ -55,7 +55,7 @@
     "radix": true,
     "semicolon": true,
     "triple-equals": [true, "allow-null-check"],
-    "typedef": [true,
+    "typedef": [false,
       "callSignature",
       "indexSignature",
       "parameter",

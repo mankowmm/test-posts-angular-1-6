@@ -23,13 +23,16 @@ export class PostListComponent {
     constructor() {
         this.controller = PostListController;
         this.template = `<div>
-                <h1 id="header">List of posts</h1>
+                <div class="page-header">
+                    <h1>List of posts</h1>
+                </div>
                 <div ng-if="$ctrl.loading" id="loader">Loading Posts..</div>
-                {{$ctrl.loading}}
                 <div ng-if="!$ctrl.loading" id="posts-list">
-                    <div ng-repeat="post in $ctrl.posts">
-                        <post-link-component post="post"></post-link-component>
-                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item" ng-repeat="post in $ctrl.posts">
+                            <post-link-component post="post"></post-link-component>
+                        </li>
+                    </ul>
 
                 </div>
             </div>`;
