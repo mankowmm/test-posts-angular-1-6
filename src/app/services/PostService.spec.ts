@@ -4,7 +4,6 @@ import { PostsService } from './PostsService';
 
 describe('PostService test suite', () => {
 
-    console.log('test');
     let service: PostsService;
     let $httpBackend: any;
 

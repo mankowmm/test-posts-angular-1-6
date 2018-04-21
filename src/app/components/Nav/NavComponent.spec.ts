@@ -29,7 +29,6 @@ describe('NavComponent test suite', () => {
         let navbarBrand = angular.element(compiledElement[0].querySelector('.navbar-brand'));
         expect(navbarBrand.text()).toBe('MM TEST APP');
         let navList = angular.element(compiledElement[0].querySelector('.navbar-nav'));
-        console.log('how many el of nav:', navList.length);
     });
 
 });

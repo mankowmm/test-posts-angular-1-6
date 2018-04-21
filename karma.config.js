@@ -28,7 +28,7 @@ module.exports = function(config) {
       './src/index.spec.js'
     ],
 
-    reporters: ['progress', 'coverage'],
+    reporters: ['spec'/*,  'progress', 'coverage' */],
 
     preprocessors: {
       './src/index.spec.js': ['coverage', 'webpack', 'sourcemap'],
@@ -53,7 +53,8 @@ module.exports = function(config) {
       require('karma-phantomjs-launcher'),
       require('karma-chrome-launcher'),
       require('karma-webpack'),
-      require('karma-sourcemap-loader')
+      require('karma-sourcemap-loader'),
+      require('karma-spec-reporter')
     ]
   });
 };
